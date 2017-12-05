@@ -1,0 +1,89 @@
+.CPMT_listView{
+	display: inline-block;
+	border: 1px solid #ccc;
+	margin: 1em;
+	>.header{	//列表头样式
+		padding: .3em;
+		background-color: #def;
+		>span{	//列表头每列样式
+			padding: 0 1em;
+			&:not(:last-child){
+				border-right: 1px solid #ccc;
+			}
+		}
+	}
+	>.list{		//列表体样式
+		height: 13em;
+		padding: .3em;
+		overflow-y: auto;
+		.item{	//列表项样式
+			cursor: pointer;
+			padding: .3em;
+			&:not(:last-child){
+				border-bottom: 1px solid #ccc;
+			}
+			span{
+				text-align: center;
+				&:not(:last-child){
+					border-right: 1px solid #ccc;
+				}
+			}
+			&.sub{
+				padding-left: 1em;
+				display: none;
+			}
+			&.spread >.sub{
+				display: block;
+			}
+		}
+	}
+	>.footer{	//列表脚
+		border-top: 1px solid #ccc;
+		background-color: #f9f9f9;
+		padding: .3em;
+		.pageRows, span{
+			display: inline-block;
+		}
+		.pageRows{
+			border: 1px solid #ccc;
+			cursor: pointer;
+			background-color: #fff;
+			margin: 0 .3em;
+			.rows{
+				padding: .3em;
+				width: 3em;
+			}
+			.mask{
+				>ul{
+					border:1px solid #ccc;
+					background-color: #fff;
+					padding: .3em;
+					width: 4em;
+					margin-top: 7px;
+					margin-left: -7px;
+				}
+				li{
+					padding: .3em 0;
+					cursor: pointer;
+				}
+				&.active{
+					display: block;
+				}
+			}
+		}
+		.btn{	//页脚的按钮
+			cursor: pointer;
+			border: 1px solid #ccc;
+			background-color: #fff;
+			padding: .3em;
+			margin: 0 .3em;
+
+		}
+		input{
+			width: 2em;
+			border:1px solid #ccc;
+			padding: .3em;
+			margin: 0 .3em;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.CPMT_select {
+  display: inline-block;
+  border: 1px solid #eee;
+  padding: 5px;
+}
+.CPMT_select .title {
+  cursor: pointer;
+}
+.CPMT_select .title i {
+  margin-left: 5px;
+}
+.CPMT_select .mask.active {
+  display: block;
+}
+.CPMT_select .list {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 5px;
+  text-align: right;
+}
+.CPMT_select .list i {
+  margin-right: 5px;
+}

@@ -1,0 +1,87 @@
+.CPMT_listView {
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin: 1em;
+}
+.CPMT_listView > .header {
+  padding: .3em;
+  background-color: #def;
+}
+.CPMT_listView > .header > span {
+  padding: 0 1em;
+}
+.CPMT_listView > .header > span:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+.CPMT_listView > .list {
+  height: 13em;
+  padding: .3em;
+  overflow-y: auto;
+}
+.CPMT_listView > .list .item {
+  cursor: pointer;
+  padding: .3em;
+}
+.CPMT_listView > .list .item:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.CPMT_listView > .list .item span {
+  text-align: center;
+}
+.CPMT_listView > .list .item span:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+.CPMT_listView > .list .item.sub {
+  padding-left: 1em;
+  display: none;
+}
+.CPMT_listView > .list .item.spread > .sub {
+  display: block;
+}
+.CPMT_listView > .footer {
+  border-top: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: .3em;
+}
+.CPMT_listView > .footer .pageRows,
+.CPMT_listView > .footer span {
+  display: inline-block;
+}
+.CPMT_listView > .footer .pageRows {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 0 .3em;
+}
+.CPMT_listView > .footer .pageRows .rows {
+  padding: .3em;
+  width: 3em;
+}
+.CPMT_listView > .footer .pageRows .mask > ul {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: .3em;
+  width: 4em;
+  margin-top: 7px;
+  margin-left: -7px;
+}
+.CPMT_listView > .footer .pageRows .mask li {
+  padding: .3em 0;
+  cursor: pointer;
+}
+.CPMT_listView > .footer .pageRows .mask.active {
+  display: block;
+}
+.CPMT_listView > .footer .btn {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: .3em;
+  margin: 0 .3em;
+}
+.CPMT_listView > .footer input {
+  width: 2em;
+  border: 1px solid #ccc;
+  padding: .3em;
+  margin: 0 .3em;
+}
